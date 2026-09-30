@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Taviraj";
+    src: url("../assets/fonts/Taviraj-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Taviraj";
+    src: url("../assets/fonts/Taviraj-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Taviraj";
+    src: url("../assets/fonts/Taviraj-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Taviraj";
+    src: url("../assets/fonts/Taviraj-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Taviraj";
+    src: url("../assets/fonts/Taviraj-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Urbanist";
+    src: url("../assets/fonts/Urbanist-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+
+
+
+:root {
+    --clr-grey: #C7C3BD;
+    --clr-black: #121717;
+    --clr-gold: #9D8554;
+    --clr-beige: #FEFBF6;
+    --clr-white: #F5F3EF;
+
+    --ff-heading: "Taviraj", serif;
+    --ff-body: "Urbanist", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--clr-black);
+    color: var(--clr-white);
+
+    font-family: var(--ff-body);
+    font-size: 18px;
+
+    line-height: 1.5;
+
+
+    overflow-x: clip;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+
+    cursor: pointer;
+
+    font: inherit;
+}
+
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-heading);
+}
+
+.container-lg {
+   max-width: 1920px;
+   width: 100%;
+}
+
+.container-md {
+    max-width: 1440px;
+    padding-inline: 0.75rem;
+    margin-inline: auto;
+}
+
+.container-sl {
+    max-width: 1280px;
+    padding-inline: 0.75rem;
+    margin-inline: auto;
+}
+
