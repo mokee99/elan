@@ -6,7 +6,7 @@ export const journalType = defineType({
   type: 'document',
 
   fields: [
-    // BASIC
+    // BASIC INFORMATION
 
     defineField({
       name: 'title',
@@ -30,8 +30,8 @@ export const journalType = defineType({
     }),
 
     defineField({
-      name: 'publishedDate',
-      title: 'Published Date',
+      name: 'date',
+      title: 'Date',
       type: 'date',
     }),
 
@@ -40,8 +40,6 @@ export const journalType = defineType({
       title: 'Reading Time',
       type: 'string',
     }),
-
-    // JOURNAL CARD
 
     defineField({
       name: 'thumbnailImage',
@@ -52,11 +50,21 @@ export const journalType = defineType({
       },
     }),
 
-    // HERO
+
+    // HERO IMAGES
 
     defineField({
-      name: 'heroImageDesktop',
+      name: 'heroImage',
       title: 'Hero Image Desktop',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+
+    defineField({
+      name: 'heroImageTablet',
+      title: 'Hero Image Tablet',
       type: 'image',
       options: {
         hotspot: true,
@@ -72,13 +80,29 @@ export const journalType = defineType({
       },
     }),
 
-    // SECTION ONE
+
+    // ARTICLE INTRO
 
     defineField({
-      name: 'sectionOneText',
-      title: 'Section One Text',
+      name: 'introHeading',
+      title: 'Heading',
+      type: 'string',
+    }),
+
+    defineField({
+      name: 'italicText',
+      title: 'Italic Text',
       type: 'text',
     }),
+
+    defineField({
+  name: 'introParagraph',
+  title: 'Paragraph',
+  type: 'text',
+}),
+
+
+    // SECTION ONE
 
     defineField({
       name: 'sectionOneImage',
@@ -89,13 +113,20 @@ export const journalType = defineType({
       },
     }),
 
-    // SECTION TWO
+    defineField({
+      name: 'sectionOneHeading',
+      title: 'Section One Heading',
+      type: 'string',
+    }),
 
     defineField({
-      name: 'sectionTwoText',
-      title: 'Section Two Text',
+      name: 'sectionOneParagraph',
+      title: 'Section One Paragraph',
       type: 'text',
     }),
+
+
+    // SECTION TWO
 
     defineField({
       name: 'sectionTwoImage',
@@ -106,22 +137,18 @@ export const journalType = defineType({
       },
     }),
 
-    // SECTION THREE
+    defineField({
+      name: 'sectionTwoHeading',
+      title: 'Section Two Heading',
+      type: 'string',
+    }),
 
     defineField({
-      name: 'sectionThreeText',
-      title: 'Section Three Text',
+      name: 'sectionTwoParagraph',
+      title: 'Section Two Paragraph',
       type: 'text',
     }),
 
-    defineField({
-      name: 'sectionThreeImage',
-      title: 'Section Three Image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-    }),
 
     // QUOTE
 

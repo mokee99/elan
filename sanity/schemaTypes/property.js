@@ -125,10 +125,27 @@ export const propertyType = defineType({
     }),
 
     defineField({
-      name: 'viewType',
-      title: 'View Type',
-      type: 'string',
-    }),
+  name: 'viewTypes',
+  title: 'View Types',
+  type: 'array',
+  of: [
+    {
+      type: 'object',
+      fields: [
+        defineField({
+          name: 'title',
+          title: 'Title',
+          type: 'string',
+        }),
+        defineField({
+          name: 'icon',
+          title: 'Icon',
+          type: 'image',
+        }),
+      ],
+    },
+  ],
+}),
 
 
     // DESCRIPTION

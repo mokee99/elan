@@ -21,6 +21,7 @@
     <meta property="og:locale" content="en_US">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/home.css">
+    <script type="module" src="./js/home.js" defer></script>
 </head>
 <body>
     
@@ -74,39 +75,45 @@
                 </h2>
 
                 <p class="property-paragraph">
-                    From contemporary coastal villas to architecturally distinguished
-                    private residences, each property is carefully selected for its
-                    design, location and exceptional living experience.
+                    From contemporary coastal villas to architecturally distinguished private residences, each property is carefully selected for its design, location and exceptional living experience.
                 </p>
             </div>
 
-            <div class="property-grid">
+            <div class="property-grid" id="property-grid"></div>
 
-                <a href="#" class="property-card">
-                    <img
-                        class="property-card-image"
-                        src=""
-                        alt="Villa Sereno"
-                    >
+        </div>
+    </div>
+</section>
 
-                    <div class="property-card-content">
-                        <h3 class="property-card-title">Villa Sereno</h3>
-
-                        <div class="property-card-info">
-                            <div class="property-card-meta">
-                                <span>6 Bathrooms</span>
-                                <span>5 Bedrooms</span>
-                            </div>
-
-                            <span class="property-card-location">
-                                Marbella, Spain
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
+<section class="blog-section">
+    <div class="container-md container-blog">
+        <div class="blog-main-warpper">
+            <div class="blog-content">
+                <h2 class="second-heading-lg">A Lifestyle of Beauty and Meaning</h2>
+                <p class="blog-paragraph">From architecture and design to travel and culture, we share inspiration for living an extraordianry life.</p>
             </div>
+            <div class="blog-imgage-wrapper">
+                <img src="./assets/images/home/journal-home.webp" class="blog-img" alt="kotor">
+            </div>
+        </div>
+         <div class="blog-link-wrapper">
+            <a href="#contact" class="blog-link">EXPLORE JOURNAL</a>
+            <img src="./assets/icons/white-arrow.svg" class="arrow" alt="arrow-icon">
+        </div>
+    </div>
+</section>
 
+<section class="cta-section">
+    <div class="cta-bg-wrapper">
+        <img src="./assets/images/home/cta-home.webp" class="bg-image" alt="image of house">
+    </div>
+    <div class="cta-overlay"></div>
+    <div class="container-md cta-container">
+        <div class="cta-main-wrapper">
+            <div class="cta-content">
+                <h2 class="second-heading-sm cta-heading">A Different Approach to Living</h2>
+                <p class="cta-paragraph">Thoughtfully selected residences, remarkable locations and timeless architecture — brought together to create places that feel truly personal.</p>
+            </div>
         </div>
     </div>
 </section>
