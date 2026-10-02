@@ -114,7 +114,40 @@
                 <h2 class="second-heading-sm cta-heading">A Different Approach to Living</h2>
                 <p class="cta-paragraph">Thoughtfully selected residences, remarkable locations and timeless architecture — brought together to create places that feel truly personal.</p>
             </div>
+
+            <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <div class="form-content">
+                        <div class="form-header">
+                            <h3 class="form-heading">Let’s Find Your Perfect Residence</h3>
+                            <p class="form-paragraph">Complete the form and our team will be in touch to discuss your requirements.</p>
+                        </div>
+                        
+                        <div class="form-filds">
+                            
+                            <input class="form-input" id="full-name" name="full-name" type="text" placeholder="Full name" required>
+                            <input class="form-input" id="email" name="email" type="email" placeholder="Email" required>
+                            <input class="form-input" id="phone" name="phone" type="tel" placeholder="Phone Number" required>
+                        </div>
+
+
+                        <button class="form-submit" type="submit">SUBMIT INQUIRY</button>
+
+                        <div class="form-error" role="alert" aria-live="polite">
+                            <p class="form-error-text">Something went wrong. Please try again.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-success" aria-live="polite">
+                        <span class="form-success-title">MESSAGE SENT</span>
+                        <p class="form-success-text">Thanks for reaching out. We’ll get back to you as soon as possible.</p>
+                    </div>
+
+                </form> 
+
         </div>
+          
     </div>
 </section>
 
