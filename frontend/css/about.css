@@ -1,0 +1,147 @@
+.about-hero-section {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.about-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+} 
+
+.about-hero-bg picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.about-hero-bg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.about-hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 95vh;
+}
+
+.hero-md {
+    font-size: 72px;
+    line-height: 90px;
+}
+
+.about-hero-heading {
+    max-width: 560px;
+}
+
+.about-hero-pagragraph {
+    max-width: 460px;
+}
+
+
+
+
+.curated-section {
+    padding-block: 96px;
+}
+.curated-main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.curated-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.second-heading-md {
+    font-size: 60px;
+    line-height: 72px;
+} 
+
+.curated-heading {
+    max-width: 460px;
+}
+
+.curated-paragraph {
+    max-width: 460px;
+}
+
+.curated-images {
+    position: relative;
+    width: 50%;
+    height: 700px;
+}
+
+.curated-image-lg,
+.curated-image-sm {
+    position: absolute;
+    object-fit: cover;
+}
+
+
+.curated-image-lg {
+    top: 0;
+    right: 0;
+    width: 78%;
+}
+
+.curated-image-sm {
+    left: 0;
+    top: 25%;
+    width: 45%;
+    z-index: 1;
+}
+
+.cinematic-wrapper {
+    width: 100%;
+}
+
+
+.philosophy-section {
+    padding-block: 140px;
+    position: relative;
+}
+
+.philosophy-main-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.phil-img {
+    position: absolute;
+    left: 0;
+    bottom: 12%;
+    max-width: 680px;
+}
+
+.phil-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.label-md {
+    color: var(--clr-grey);
+    font-size: 20px;
+
+}
+
+.phil-heading {
+    max-width: 640px;
+    padding-top: 32px;
+}
+
+.phil-paragraph {
+    max-width: 500px;
+    padding-top: 32px;
+}
