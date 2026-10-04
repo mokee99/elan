@@ -6,44 +6,18 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "Taviraj";
-    src: url("../assets/fonts/Taviraj-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-}
 
 @font-face {
-    font-family: "Taviraj";
-    src: url("../assets/fonts/Taviraj-ExtraBold.ttf") format("truetype");
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Taviraj";
-    src: url("../assets/fonts/Taviraj-Medium.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Taviraj";
-    src: url("../assets/fonts/Taviraj-Regular.ttf") format("truetype");
+    font-family: "Prata";
+    src: url("../assets/fonts/Prata-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Taviraj";
-    src: url("../assets/fonts/Taviraj-Light.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-}
 
 @font-face {
-    font-family: "Urbanist";
-    src: url("../assets/fonts/Urbanist-VariableFont_wght.ttf") format("truetype");
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter-Variable.ttf") format("truetype");
     font-weight: 100 900;
     font-style: normal;
 }
@@ -58,8 +32,8 @@
     --clr-beige: #FEFBF6;
     --clr-white: #F5F3EF;
 
-    --ff-heading: "Taviraj", serif;
-    --ff-body: "Urbanist", sans-serif;
+    --ff-heading: "Prata", serif;
+    --ff-body: "Inter", sans-serif;
 }
 
 html {
@@ -72,6 +46,7 @@ body {
 
     font-family: var(--ff-body);
     font-size: 18px;
+    font-weight: 400;
 
     line-height: 1.5;
 
@@ -115,6 +90,7 @@ h4,
 h5,
 h6 {
     font-family: var(--ff-heading);
+    font-weight: 400;
 }
 
 .container-lg {
