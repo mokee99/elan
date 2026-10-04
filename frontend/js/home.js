@@ -1,6 +1,6 @@
-import {sanityFetch} from './sanity-client.js'
+import { sanityFetch } from './sanity-client.js';
 
-const propertyGrid = document.querySelector('#property-grid')
+const propertyGrid = document.querySelector('#property-grid');
 
 const query = `
     *[_type == "property"] {
@@ -11,11 +11,13 @@ const query = `
         thumbnailBathrooms,
         "thumbnailImage": thumbnailImage.asset->url
     }
-`
+`;
 
 async function loadProperties() {
+    if (!propertyGrid) return;
+
     try {
-        const properties = await sanityFetch(query)
+        const properties = await sanityFetch(query);
 
         propertyGrid.innerHTML = properties.map((property) => {
             return `
@@ -50,15 +52,16 @@ async function loadProperties() {
 
                     </div>
                 </a>
-            `
-        }).join('')
+            `;
+        }).join('');
 
     } catch (error) {
-        console.error('Error loading properties:', error)
+        console.error('Error loading properties:', error);
     }
 }
 
-loadProperties()
+loadProperties();
+
 
 const contactForm = document.querySelector(".contact-form");
 
@@ -91,6 +94,7 @@ if (contactForm) {
 
             contactForm.reset();
             contactForm.classList.add("is-success");
+
         } catch (error) {
             console.error("Contact form error:", error);
 
@@ -101,3 +105,4 @@ if (contactForm) {
         }
     });
 }
+

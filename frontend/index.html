@@ -12,7 +12,7 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="ELAN | Luxury Real Estate">
-    <meta property="og:description" content="Architecture portfolio featuring residential, interior, and conceptual design projects.">
+    <meta property="og:description" content="Discover exceptional luxury residences in the world’s most desirable locations, curated by ELAN.">
     <meta property="og:url" content="https://tvoj-domen.com/">
     <meta property="og:image" content="https://tvoj-domen.com/assets/images/opengraph.jpg">
     <meta property="og:image:width" content="1200">
@@ -21,11 +21,15 @@
     <meta property="og:locale" content="en_US">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/home.css">
-    <script type="module" src="./js/home.js" defer></script>
+    <link rel="stylesheet" href="./css/components.css">
+    <script type="module" src="./js/home.js?v=999"></script>
+    <script src="./js/components.js" defer></script>
 </head>
 <body>
-    
 
+<div id="navbar"></div>
+    
+<main>
 <section class="hero-section">
     <div class="container-md hero-container">
 
@@ -34,7 +38,7 @@
             <h1 class="hero-heading">Timeless Living in Perfect Harmony.</h1>
 
             <div class="hero-image">
-                <img src="./assets/images/home/hero-home.webp" alt="Luxury residence">
+                <img src="./assets/images/home/hero-home.webp" alt="Contemporary luxury residence surrounded by landscaped gardens">
             </div>
 
             <p class="hero-paragraph">A collection of luxury residence in the world’s most desirable locations.</p>
@@ -54,7 +58,7 @@
                     <h2 class="second-heading-sm about-heading">We belive a home is more than a place.</h2>
                 </div>
                 <div class="about-center">
-                    <img src="./assets/images/home/about-home.webp" alt="Image of room in the house">
+                    <img src="./assets/images/home/about-home.webp" alt="Luxury living room overlooking the pool and sea">
                 </div>
                 <div class="about-right">
                     <div class="about-paragraph-wrapper">
@@ -71,7 +75,7 @@
         </div>
     </section>
 
-   <section class="property-section">
+   <section class="property-section" id="property">
     <div class="container-lg">
         <div class="property-main-warpper">
 
@@ -103,7 +107,7 @@
                 <img src="./assets/icons/white-arrow.svg" class="arrow" alt="arrow-icon">
             </div>
             <div class="blog-imgage-wrapper">
-                <img src="./assets/images/home/journal-home.webp" class="blog-img" alt="kotor">
+                <img src="./assets/images/home/journal-home.webp" class="blog-img" alt="Aerial view of Budva coastline and marina">
             </div>
         </div>
          
@@ -113,7 +117,7 @@
 <section id="contact" class="cta-section">
     <div class="cta-image-wrapper">
     <div class="cta-bg-wrapper">
-        <img src="./assets/images/home/cta-home.webp" class="bg-image" alt="image of house">
+        <img src="./assets/images/home/cta-home.webp" class="bg-image" alt="">
     </div>
     <div class="cta-overlay"></div>
     </div>
@@ -159,6 +163,10 @@
           
     </div>
 </section>
+
+</main>
+
+<div id="footer"></div>
 
 </body>
 </html>
