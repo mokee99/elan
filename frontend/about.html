@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELAN | Luxury Real Estate</title>
-    <meta name="description" content="Discover exceptional luxury residences in the world’s most desirable locations. ELAN presents a curated collection of distinctive homes defined by architecture, design, and refined living.">
+    <title>About ELAN | Luxury Real Estate</title>
+    <meta name="description" content="Discover ELAN’s approach to luxury living, where timeless architecture, privacy, craftsmanship, and exceptional locations come together.">
     <meta name="theme-color" content="#ECEBEB">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-chrome-192x192.png">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="ELAN | Luxury Real Estate">
-    <meta property="og:description" content="Architecture portfolio featuring residential, interior, and conceptual design projects.">
+    <meta property="og:title" content="About ELAN | Luxury Real Estate">
+    <meta property="og:description" content="Discover ELAN’s approach to luxury living, where timeless architecture, privacy, craftsmanship, and exceptional locations come together.">
     <meta property="og:url" content="https://tvoj-domen.com/">
     <meta property="og:image" content="https://tvoj-domen.com/assets/images/opengraph.jpg">
     <meta property="og:image:width" content="1200">
@@ -20,19 +20,23 @@
     <meta property="og:site_name" content="ELAN">
     <meta property="og:locale" content="en_US">
     <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/components.css">
 
-    <script type="module" src="./js/home.js" defer></script>
+    <script src="./js/components.js" defer></script>
 </head>
 
 <body>
+
+     <div id="navbar"></div>
+
+<main>
     <section class="about-hero-section">
         <div class="about-hero-bg">
             <picture>
                 <source media="(max-width: 767px)" srcset="./assets/images/about/about-hero-mobile.webp">
                 <source media="(max-width: 991px)" srcset="./assets/images/about/about-hero-tablet.webp">
-                <img class="hero-image" src="./assets/images/about/about-hero.webp" alt="House in the wood" loading="eager">
+                <img class="hero-image-fs" src="./assets/images/about/about-hero.webp" alt="House in the wood" loading="eager">
             </picture>
         </div>
 
@@ -81,5 +85,8 @@
             </div>
         </div>
     </section>
+</main>
+
+    <div id="footer"></div>
 
 </body>

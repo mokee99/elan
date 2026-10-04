@@ -131,3 +131,41 @@ h6 {
     }
 }
 
+.hero-md {
+    font-size: 72px;
+    line-height: 90px;
+}
+
+@media (max-width: 992px) {
+    .hero-md {
+        font-size: 60px;
+        line-height: 72px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-md {
+        font-size: 40px;
+        line-height: 52px;
+    }
+}
+
+.second-heading-md {
+    font-size: 60px;
+    line-height: 72px;
+}
+
+@media (max-width: 1100px) {
+    .second-heading-md {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .second-heading-md {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
