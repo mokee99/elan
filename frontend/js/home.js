@@ -55,9 +55,9 @@ async function loadProperties() {
             `;
         }).join('');
 
-    if (window.location.hash === "#contact") {
-    document.querySelector("#contact")?.scrollIntoView();
-}
+        if (window.location.hash === "#contact") {
+        document.querySelector("#contact")?.scrollIntoView();
+    }
 
     } catch (error) {
         console.error('Error loading properties:', error);
