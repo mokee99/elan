@@ -125,28 +125,27 @@ export const propertyType = defineType({
     }),
 
     defineField({
-  name: 'viewTypes',
-  title: 'View Types',
-  type: 'array',
-  of: [
-    {
-      type: 'object',
-      fields: [
-        defineField({
-          name: 'title',
-          title: 'Title',
-          type: 'string',
-        }),
-        defineField({
-          name: 'icon',
-          title: 'Icon',
-          type: 'image',
-        }),
+      name: 'viewTypes',
+      title: 'View Types',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            defineField({
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+            }),
+            defineField({
+              name: 'icon',
+              title: 'Icon',
+              type: 'image',
+            }),
+          ],
+        },
       ],
-    },
-  ],
-}),
-
+    }),
 
     // DESCRIPTION
 
@@ -167,7 +166,6 @@ export const propertyType = defineType({
       title: 'Description Paragraph Three',
       type: 'text',
     }),
-
 
     // FEATURES & AMENITIES
 
@@ -194,7 +192,6 @@ export const propertyType = defineType({
       ],
     }),
 
-
     // FLOOR PLAN
 
     defineField({
@@ -212,6 +209,25 @@ export const propertyType = defineType({
       type: 'file',
     }),
 
+    // SIMILAR RESIDENCES
+
+    defineField({
+      name: 'similarBedrooms',
+      title: 'Similar Residences Bedrooms',
+      type: 'string',
+    }),
+
+    defineField({
+      name: 'similarBathrooms',
+      title: 'Similar Residences Bathrooms',
+      type: 'string',
+    }),
+
+    defineField({
+      name: 'similarIndoorArea',
+      title: 'Similar Residences Indoor Area',
+      type: 'string',
+    }),
 
     // PROPERTY DETAILS
 
@@ -237,6 +253,5 @@ export const propertyType = defineType({
         },
       ],
     }),
-
   ],
 })

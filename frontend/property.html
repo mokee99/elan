@@ -4,52 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Residence | ELAN Luxury Real Estate</title>
-
-    <meta
-        name="description"
-        content="Discover exceptional residences selected by ELAN Luxury Real Estate."
-    >
-
+    <meta name="description" content="Discover exceptional residences selected by ELAN Luxury Real Estate.">
     <meta name="theme-color" content="#121717">
-
     <!-- Favicon -->
-    <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="./assets/favicon/favicon-32x32.png"
-    >
-
-    <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="./assets/favicon/apple-touch-icon.png"
-    >
-
-    <link
-        rel="icon"
-        type="image/png"
-        sizes="192x192"
-        href="./assets/favicon/android-chrome-192x192.png"
-    >
-
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-chrome-192x192.png">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="ELAN Luxury Real Estate">
-    <meta
-        property="og:description"
-        content="Discover exceptional residences selected by ELAN Luxury Real Estate."
-    >
+    <meta property="og:description" content="Discover exceptional residences selected by ELAN Luxury Real Estate.">
     <meta property="og:site_name" content="ELAN">
     <meta property="og:locale" content="en_US">
-
     <!-- CSS -->
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/property.css">
     <link rel="stylesheet" href="./css/components.css">
-
     <!-- JS -->
     <script type="module" src="./js/property.js" defer></script>
     <script src="./js/components.js" defer></script>
@@ -63,64 +34,23 @@
 
     <main>
 
-        <!-- PROPERTY GALLERY -->
+        
 
         <section class="property-gallery-section">
-
-            <div class="container-md">
-
-                <div class="property-gallery">
-
-                    <img
-                        class="property-gallery-main"
-                        id="property-main-image"
-                        src=""
-                        alt=""
-                    >
-
-
+          <div class="container-md">
+              <div class="property-gallery">
+                    <img class="property-gallery-main" id="property-main-image" src="" alt="">
                     <div class="property-gallery-middle">
+                        <img class="property-gallery-small" id="property-top-right-image" src="" alt="">
 
-                        <img
-                            class="property-gallery-small"
-                            id="property-top-right-image"
-                            src=""
-                            alt=""
-                        >
-
-                        <img
-                            class="property-gallery-small"
-                            id="property-bottom-left-image"
-                            src=""
-                            alt=""
-                        >
-
+                        <img class="property-gallery-small" id="property-bottom-left-image" src="" alt="">
                     </div>
-
-
                     <div class="property-gallery-right">
-
-                        <img
-                            class="property-gallery-vertical"
-                            id="property-bottom-right-image"
-                            src=""
-                            alt=""
-                        >
-
-                        <button
-                            class="property-gallery-button"
-                            id="open-gallery"
-                            type="button"
-                        >
-                            SHOW ALL PHOTOS
-                        </button>
-
+                        <img class="property-gallery-vertical" id="property-bottom-right-image" src="" alt="">
+                        <button class="property-gallery-button" id="open-gallery" type="button">SHOW ALL PHOTOS</button>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
 
@@ -128,234 +58,85 @@
         <!-- PROPERTY OVERVIEW -->
 
         <section class="property-overview-section">
-
-            <div class="container-md">
-
-                <div class="property-overview-wrapper">
-
-
-                    <!-- LEFT -->
-
-                    <div class="property-intro">
-
-                        <h1
-                            class="property-title"
-                            id="property-title"
-                        ></h1>
-
-
+          <div class="container-md">
+              <div class="property-overview-wrapper">
+                  <div class="property-intro">
+                        <h1 class="property-title" id="property-title"></h1>
                         <div class="property-location">
-
-                            <img
-                                class="property-location-icon"
-                                src="./assets/icons/location-icon.svg"
-                                alt=""
-                            >
-
+                            <img class="property-location-icon" src="./assets/icons/location-icon.svg" alt="">
                             <span id="property-location"></span>
-
                         </div>
-
-
-                        <a
-                            class="property-viewing-button"
-                            href="./index.html#contact"
-                        >
-                            SCHEDULE A VIEWING
-                        </a>
-
+                        <a class="property-viewing-button" href="./index.html#contact">SCHEDULE A VIEWING</a>
                     </div>
-
-
-
-                    <!-- RIGHT -->
-
+                    
                     <div class="property-overview-content">
-
-
-                        <!-- STATS -->
-
                         <div class="property-stats">
-
                             <div class="property-stat">
-                                <span
-                                    class="property-stat-number"
-                                    id="property-area"
-                                ></span>
-                                <span class="property-stat-unit">m²</span>
+                                <span class="property-stat-number" id="property-area"></span>
                             </div>
-
-
                             <div class="property-stat">
-                                <span
-                                    class="property-stat-number"
-                                    id="property-floors"
-                                ></span>
-                                <span class="property-stat-unit">floors</span>
+                                <span class="property-stat-number" id="property-floors"></span>
                             </div>
-
-
                             <div class="property-stat">
-                                <span
-                                    class="property-stat-number"
-                                    id="property-bedrooms"
-                                ></span>
-                                <span class="property-stat-unit">beds</span>
+                                <span class="property-stat-number" id="property-bedrooms"></span>
                             </div>
-
-
                             <div class="property-stat">
-                                <span
-                                    class="property-stat-number"
-                                    id="property-bathrooms"
-                                ></span>
-                                <span class="property-stat-unit">baths</span>
+                                <span class="property-stat-number" id="property-bathrooms"></span>
                             </div>
-
                         </div>
 
+                        <div class="property-view-types" id="property-view-types"></div>
 
+                       <div class="property-description">
+                        <p id="description-one"></p>
 
-                        <!-- VIEW TYPES -->
-
-                        <div
-                            class="property-view-types"
-                            id="property-view-types"
-                        ></div>
-
-
-
-                        <!-- DESCRIPTION -->
-
-                        <div class="property-description">
-
-                            <p id="description-one"></p>
-
+                        <div class="property-description-extra" id="description-extra">
                             <p id="description-two"></p>
-
                             <p id="description-three"></p>
-
                         </div>
 
+                        <button class="property-description-toggle" id="description-toggle" type="button" aria-expanded="false">
+                            SHOW MORE <span>↓</span>
+                        </button>
                     </div>
-
+                    </div>
                 </div>
-
             </div>
-
         </section>
-
-
-
-        <!-- FEATURES -->
 
         <section class="property-features-section">
-
             <div class="container-md">
-
                 <div class="property-features-wrapper">
-
-                    <h2 class="property-section-heading">
-                        Features & Amenities
-                    </h2>
-
-                    <div
-                        class="property-features-grid"
-                        id="property-features"
-                    ></div>
-
+                    <h2 class="property-section-heading">Features & Amenities</h2>
+                    <div class="property-features-grid" id="property-features"></div>
                 </div>
-
             </div>
-
         </section>
-
-
-
-        <!-- FLOOR PLAN + DETAILS -->
 
         <section class="property-details-section">
-
             <div class="container-md">
-
                 <div class="property-details-wrapper">
-
-
-                    <!-- FLOOR PLAN -->
-
                     <div class="floor-plan-wrapper">
-
                         <div class="floor-plan-image-wrapper">
-
-                            <img
-                                class="floor-plan-image"
-                                id="floor-plan-image"
-                                src=""
-                                alt="Floor plan"
-                            >
-
+                            <img class="floor-plan-image" id="floor-plan-image" src="" alt="Floor plan">
                         </div>
-
-
-                        <a
-                            class="floor-plan-button"
-                            id="floor-plan-button"
-                            href="#"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            VIEW FLOOR PLANS
-                            <span>→</span>
-                        </a>
-
+                        <a class="floor-plan-button" id="floor-plan-button" href="#" target="_blank" rel="noopener">VIEW FLOOR PLANS<span>→</span></a>
                     </div>
-
-
-
-                    <!-- DETAILS -->
 
                     <div class="property-details-content">
-
-                        <h2 class="property-section-heading">
-                            Property Details
-                        </h2>
-
-
-                        <div
-                            class="property-details-list"
-                            id="property-details-list"
-                        ></div>
-
+                        <h2 class="property-section-heading">Property Details</h2>
+                        <div class="property-details-list" id="property-details-list"></div>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
-
-
-        <!-- SIMILAR RESIDENCES -->
 
         <section class="similar-residences-section">
-
             <div class="container-md">
-
-                <h2 class="property-section-heading">
-                    Similar Residences
-                </h2>
-
-
-                <div
-                    class="similar-residences-grid"
-                    id="similar-residences-grid"
-                ></div>
-
+                <h2 class="property-section-heading">Similar Residences</h2>
+                <div class="similar-residences-grid" id="similar-residences-grid"></div>
             </div>
-
         </section>
-
     </main>
 
 
@@ -366,54 +147,22 @@
 
     <!-- FULLSCREEN GALLERY -->
 
-    <div
-        class="gallery-modal"
-        id="gallery-modal"
-        aria-hidden="true"
-    >
+    <div class="gallery-modal" id="gallery-modal" aria-hidden="true">
 
-        <button
-            class="gallery-close"
-            id="gallery-close"
-            type="button"
-            aria-label="Close gallery"
-        >
-            <img
-                src="./assets/icons/gallery-x.svg"
-                alt=""
-            >
+        <button class="gallery-close" id="gallery-close" type="button" aria-label="Close gallery">
+            <img src="./assets/icons/gallery-x.svg" alt=""></button>
+
+
+        <button class="gallery-arrow gallery-arrow-left" id="gallery-prev" type="button" aria-label="Previous image">
+            <img src="./assets/icons/gallery-arrow.svg" alt="">
         </button>
 
 
-        <button
-            class="gallery-arrow gallery-arrow-left"
-            id="gallery-prev"
-            type="button"
-            aria-label="Previous image"
-        >
-            <img
-                src="./assets/icons/gallery-arrow.svg"
-                alt=""
-            >
-        </button>
+        <div class="gallery-modal-content" id="gallery-modal-content"></div>
 
 
-        <div
-            class="gallery-modal-content"
-            id="gallery-modal-content"
-        ></div>
-
-
-        <button
-            class="gallery-arrow gallery-arrow-right"
-            id="gallery-next"
-            type="button"
-            aria-label="Next image"
-        >
-            <img
-                src="./assets/icons/gallery-arrow.svg"
-                alt=""
-            >
+        <button class="gallery-arrow gallery-arrow-right" id="gallery-next" type="button" aria-label="Next image">
+            <img src="./assets/icons/gallery-arrow.svg" alt="">
         </button>
 
     </div>
