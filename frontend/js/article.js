@@ -32,6 +32,19 @@ const query = `
     }
 `;
 
+const relatedQuery = `
+    *[
+        _type == "journal" &&
+        slug.current != "${slug}"
+    ] | order(date desc) [0] {
+        title,
+        label,
+        date,
+        "slug": slug.current,
+        "thumbnail": thumbnailImage.asset->url
+    }
+`;
+
 
 function formatDate(date) {
     return new Intl.DateTimeFormat("en-US", {
@@ -80,6 +93,7 @@ async function loadArticle() {
 
         const heroMobile =
             document.querySelector("#article-hero-mobile");
+
 
 
         heroDesktop.src =
@@ -191,4 +205,35 @@ async function loadArticle() {
 }
 
 
+
+async function loadRelatedArticle() {
+    try {
+        const article = await sanityFetch(relatedQuery);
+        const grid = document.querySelector("#related-articles-grid");
+
+        if (!article || !grid) return;
+
+        grid.innerHTML = `
+            <a class="journal-card" href="./article.html?slug=${article.slug}">
+                <img class="journal-card-image" src="${article.thumbnail}" alt="${article.title}">
+                <div class="journal-card-overlay"></div>
+
+                <div class="journal-card-content">
+                    <h3 class="journal-card-title">${article.title}</h3>
+
+                    <div class="journal-card-meta">
+                        <span>${article.label}</span>
+                        <span>•</span>
+                        <span>${formatDate(article.date).toUpperCase()}</span>
+                    </div>
+                </div>
+            </a>
+        `;
+
+    } catch (error) {
+        console.error("Error loading related article:", error);
+    }
+}
+
 loadArticle();
+loadRelatedArticle();

@@ -44,6 +44,7 @@
     line-height: 24px;
     color: #C7C3BD;
     margin-bottom: 24px;
+    font-family: var(--ff-heading);
 }
 
 @media (max-width: 767px) {
