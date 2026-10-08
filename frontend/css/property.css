@@ -612,6 +612,10 @@
     height: 18px;
 }
 
+.similar-property-image-wrapper {
+    overflow: hidden;
+}
+
 
 
 @media (max-width: 992px) {
@@ -768,3 +772,254 @@
         right: 20px;
     }
 }
+
+/* =========================
+   PROPERTY GALLERY ANIMATIONS
+========================= */
+
+.property-gallery-main,
+.property-gallery-small,
+.property-gallery-vertical {
+    opacity: 0;
+    transform: scale(1.04);
+    transition:
+        opacity 1100ms ease,
+        transform 1400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.property-gallery-main.is-visible,
+.property-gallery-small.is-visible,
+.property-gallery-vertical.is-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Gallery Button */
+
+.property-gallery-button {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 900ms ease,
+        transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.property-gallery-button.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .property-gallery-main,
+    .property-gallery-small,
+    .property-gallery-vertical,
+    .property-gallery-button {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* =========================
+   PROPERTY OVERVIEW ANIMATIONS
+========================= */
+
+.property-title,
+.property-location,
+.property-viewing-button,
+.property-stats,
+.property-view-types,
+.property-description {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+        opacity 900ms ease,
+        transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.property-title.is-visible,
+.property-location.is-visible,
+.property-viewing-button.is-visible,
+.property-stats.is-visible,
+.property-view-types.is-visible,
+.property-description.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .property-title,
+    .property-location,
+    .property-viewing-button,
+    .property-stats,
+    .property-view-types,
+    .property-description {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* =========================
+   FEATURES ANIMATIONS
+========================= */
+
+.property-features-wrapper > .property-section-heading,
+.property-feature {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 800ms ease,
+        transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.property-features-wrapper > .property-section-heading.is-visible,
+.property-feature.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .property-features-wrapper > .property-section-heading,
+    .property-feature {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* =========================
+   FLOOR PLAN + DETAILS ANIMATIONS
+========================= */
+
+/* Floor Plan Image Reveal */
+
+.floor-plan-image-wrapper {
+    clip-path: inset(100% 0 0 0);
+    transition: clip-path 1800ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.floor-plan-image-wrapper.is-visible {
+    clip-path: inset(0 0 0 0);
+}
+
+/* Button + Property Details */
+
+.floor-plan-button,
+.property-details-content > .property-section-heading,
+.property-detail-row {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+        opacity 900ms ease,
+        transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.floor-plan-button.is-visible,
+.property-details-content > .property-section-heading.is-visible,
+.property-detail-row.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .floor-plan-image-wrapper {
+        clip-path: none;
+        transition: none;
+    }
+
+    .floor-plan-button,
+    .property-details-content > .property-section-heading,
+    .property-detail-row {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* Floor Plan Container Reveal */
+
+.floor-plan-wrapper {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 1000ms ease,
+        transform 1000ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.floor-plan-wrapper.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .floor-plan-wrapper {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* =========================
+   SIMILAR RESIDENCES ANIMATIONS
+========================= */
+
+/* Heading */
+
+.similar-residences-section > .container-md > .property-section-heading {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+        opacity 900ms ease,
+        transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Cards */
+
+.similar-property-card {
+    opacity: 0;
+    transform: translateY(32px);
+    transition:
+        opacity 1000ms ease,
+        transform 1000ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Visible */
+
+.similar-residences-section > .container-md > .property-section-heading.is-visible,
+.similar-property-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Image Hover Zoom */
+
+.similar-property-card {
+    overflow: hidden;
+}
+
+.similar-property-image {
+    transition: transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (hover: hover) {
+    .similar-property-card:hover .similar-property-image {
+        transform: scale(1.04);
+    }
+}
+
+/* Reduced Motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .similar-residences-section > .container-md > .property-section-heading,
+    .similar-property-card {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .similar-property-image {
+        transition: none;
+    }
+}
+

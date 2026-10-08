@@ -328,3 +328,149 @@
         margin-top: 16px;
     }
 }
+
+
+/* =========================
+   ARTICLE HERO ANIMATIONS
+========================= */
+
+.article-hero-label,
+.article-hero-heading,
+.article-hero-meta {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 1000ms ease,
+        transform 1000ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.article-hero-label.is-visible,
+.article-hero-heading.is-visible,
+.article-hero-meta.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Background Image Zoom */
+
+.article-hero-bg img {
+    transform: scale(1.05);
+    transition: transform 2000ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.article-hero-bg img.is-visible {
+    transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .article-hero-label,
+    .article-hero-heading,
+    .article-hero-meta {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .article-hero-bg img {
+        transform: none;
+        transition: none;
+    }
+}
+
+/* =========================
+   CINEMATIC ANIMATIONS
+========================= */
+
+.cinematic-journal-wrapper {
+    overflow: hidden;
+    margin-top: 96px;
+}
+
+.cinematic-journal {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1.12);
+    will-change: transform;
+}
+
+@media (max-width: 992px) {
+    .cinematic-journal-wrapper {
+        margin-top: 72px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cinematic-journal-wrapper {
+        margin-top: 48px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cinematic-journal {
+        transform: none !important;
+        will-change: auto;
+    }
+}
+
+/* =========================
+   ARTICLE TEXT ANIMATIONS
+========================= */
+
+.article-text-block > * {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+        opacity 900ms ease,
+        transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.article-text-block > *.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   RELATED ARTICLES ANIMATIONS
+========================= */
+
+.related-articles-heading,
+.related-articles-grid .journal-card {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+        opacity 900ms ease,
+        transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.related-articles-heading.is-visible,
+.related-articles-grid .journal-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Card Image Hover Zoom */
+
+.related-articles-grid .journal-card-image {
+    transition: transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .related-articles-grid .journal-card:hover .journal-card-image {
+        transform: scale(1.05);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .article-text-block > *,
+    .related-articles-heading,
+    .related-articles-grid .journal-card {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .related-articles-grid .journal-card-image {
+        transition: none;
+    }
+}

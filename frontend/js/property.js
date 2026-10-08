@@ -167,6 +167,7 @@ async function loadProperty() {
 
         // GALLERY
         setupGallery(property.title);
+        document.dispatchEvent(new Event("property:loaded"));
 
         // SIMILAR RESIDENCES
         await loadSimilarProperties();
@@ -184,7 +185,9 @@ async function loadSimilarProperties() {
         grid.innerHTML = properties.map((property) => {
             return `
                 <a class="similar-property-card" href="./property.html?slug=${property.slug}">
-                    <img class="similar-property-image" src="${property.thumbnailImage}" alt="${property.title}">
+                    <div class="similar-property-image-wrapper">
+                        <img class="similar-property-image" src="${property.thumbnailImage}" alt="${property.title}">
+                    </div>
 
                     <div class="similar-property-content">
                         <h3 class="similar-property-title">${property.title}</h3>

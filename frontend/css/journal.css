@@ -205,3 +205,91 @@
         margin-top: 16px;
     }
 }
+
+/* =========================
+   JOURNAL HERO ANIMATIONS
+========================= */
+
+.journal-hero-content .hero-md,
+.journal-hero-paragraph {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 1000ms ease,
+        transform 1000ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.journal-hero-content .hero-md.is-visible,
+.journal-hero-paragraph.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Background Image Zoom */
+
+.journal-hero-bg img {
+    transform: scale(1.05);
+    transition: transform 2000ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.journal-hero-bg img.is-visible {
+    transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .journal-hero-content .hero-md,
+    .journal-hero-paragraph {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .journal-hero-bg img {
+        transform: none;
+        transition: none;
+    }
+}
+
+/* =========================
+   JOURNAL LIST ANIMATIONS
+========================= */
+
+.journal-list-heading,
+.journal-card {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+        opacity 900ms ease,
+        transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.journal-list-heading.is-visible,
+.journal-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Card Image Hover Zoom */
+
+.journal-card-image {
+    transition: transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .journal-card:hover .journal-card-image {
+        transform: scale(1.05);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .journal-list-heading,
+    .journal-card {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .journal-card-image {
+        transition: none;
+    }
+}

@@ -139,6 +139,8 @@
 .navbar-link {
     color: var(--clr-beige);
     text-decoration: none;
+    letter-spacing: 0.06em;
+    font-weight: 500;
 }
 
 

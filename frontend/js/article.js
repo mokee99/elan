@@ -198,6 +198,7 @@ async function loadArticle() {
 
         document.title =
             `${article.title} | ELAN Journal`;
+            document.dispatchEvent(new Event("article:loaded"));
 
     } catch (error) {
         console.error("Error loading article:", error);

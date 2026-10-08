@@ -363,3 +363,164 @@
         padding-top: 16px;
     }
 }
+
+/* =========================
+   ABOUT HERO ANIMATIONS
+========================= */
+
+.about-hero-heading,
+.about-hero-pagragraph {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 1000ms ease,
+        transform 1000ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.about-hero-heading.is-visible,
+.about-hero-pagragraph.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Background Image Zoom */
+
+.about-hero-bg img {
+    transform: scale(1.05);
+    transition: transform 2000ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.about-hero-bg img.is-visible {
+    transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-hero-heading,
+    .about-hero-pagragraph {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .about-hero-bg img {
+        transform: none;
+        transition: none;
+    }
+}
+
+/* =========================
+   CURATED ANIMATIONS
+========================= */
+
+.curated-heading,
+.curated-paragraph,
+.curated-image-sm {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+        opacity 900ms ease,
+        transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.curated-heading.is-visible,
+.curated-paragraph.is-visible,
+.curated-image-sm.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Large Image Reveal */
+
+.curated-image-lg {
+    clip-path: inset(100% 0 0 0);
+    transition: clip-path 1700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.curated-image-lg.is-visible {
+    clip-path: inset(0 0 0 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .curated-heading,
+    .curated-paragraph,
+    .curated-image-sm {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .curated-image-lg {
+        clip-path: none;
+        transition: none;
+    }
+}
+
+/* =========================
+   CINEMATIC ANIMATIONS
+========================= */
+
+.cinematic-wrapper {
+    overflow: hidden;
+}
+
+.cinematic-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1.12);
+    will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cinematic-wrapper img {
+        transform: none !important;
+        will-change: auto;
+    }
+}
+
+/* =========================
+   PHILOSOPHY ANIMATIONS
+========================= */
+
+.phil-content-wrapper .label-md,
+.phil-heading,
+.phil-paragraph {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+        opacity 900ms ease,
+        transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.phil-content-wrapper .label-md.is-visible,
+.phil-heading.is-visible,
+.phil-paragraph.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Image Reveal */
+
+.phil-img {
+    clip-path: inset(100% 0 0 0);
+    transition: clip-path 1800ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.phil-img.is-visible {
+    clip-path: inset(0 0 0 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .phil-content-wrapper .label-md,
+    .phil-heading,
+    .phil-paragraph {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .phil-img {
+        clip-path: none;
+        transition: none;
+    }
+}
